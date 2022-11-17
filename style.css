@@ -50,6 +50,8 @@ font-family: 'Staatliches', cursive; */
   }
 
   .editor-heading {
+    display: flex;
+    justify-content: space-between;
     border: 1px solid black;
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -58,6 +60,13 @@ font-family: 'Staatliches', cursive; */
   .editor-heading h3 {
    padding: 12px 10px;
   }
+
+  .editor-body {
+    padding: 18px 18px;
+    /* display: none; */
+    overflow: hidden;
+  }
+
 
   .previewer {
     margin: 20px 20px;
@@ -76,4 +85,33 @@ font-family: 'Staatliches', cursive; */
 
   .previewer-heading h3 {
    padding: 12px 10px;
+  }
+
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    /* width: 100%; */
+    border: none;
+    /* text-align: left;
+    outline: none; */
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
   }

@@ -1,4 +1,7 @@
 1. Build An Editor
 2. Build A Previewer Box
 3. Figure out how to get the editor to parse code into the Previewer
-4. How do I create a button that collapses to show more in a box?
+4. How do I create a button that collapses to show more in a box?    collapsible increases max height
+
+
+
